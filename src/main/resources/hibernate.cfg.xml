@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/AccuWeather</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.username">andrii</property>
+        <property name="connection.password">Wireless802.11ac</property>
+
+
+        <mapping class="ua.lviv.iot.model.City"/>
+        <mapping class="ua.lviv.iot.model.Country"/>
+        <mapping class="ua.lviv.iot.model.DailyForecast"/>
+        <mapping class="ua.lviv.iot.model.HourlyForecast"/>
+        <mapping class="ua.lviv.iot.model.MonthlyForecast"/>
+        <mapping class="ua.lviv.iot.model.Precipitation"/>
+        <mapping class="ua.lviv.iot.model.Region"/>
+        <mapping class="ua.lviv.iot.model.Weather"/>
+        <mapping class="ua.lviv.iot.model.WeatherCondition"/>
+        <mapping class="ua.lviv.iot.model.WorldPart"/>
+        <!-- <property name="connection.username"/> -->
+        <!-- <property name="connection.password"/> -->
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
